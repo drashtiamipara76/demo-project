@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Health care</string>
+    <string name="doctor_list">https://www.appmania.in/collage_project/collage_doctor.json</string>
+</resources>

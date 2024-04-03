@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".App_Model.medicine_order_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#7065E4"
+            android:padding="@dimen/_5sdp"
+            android:text="Appointment Details"
+            android:fontFamily="@font/avenir_black"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp">
+
+            <TextView
+                android:id="@+id/dr_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/avenir_black"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="Name"
+                android:textColor="#262C3D"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/dr_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/avenir_book"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="profile"
+                android:textColor="#747F9E"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/dr_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/avenir_book"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="amount"
+                android:textColor="#747F9E"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="#B0B3C7" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/avenir_book"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Name"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="#747F9E"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/userphoneno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/avenir_book"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Phone no"
+                android:textColor="#747F9E"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/useremail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/avenir_book"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Email"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="#747F9E"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="#B0B3C7" />
+
+
+        <LinearLayout
+            android:id="@+id/layoutapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/ic_delete" />
+
+                <TextView
+                    android:id="@+id/textdelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/avenir_black"
+                    android:text="Delete Appointment"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+    </LinearLayout>

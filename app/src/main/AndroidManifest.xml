@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.health.care">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".AppManager.ApplicationManager"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_app_logo_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Application_HealthCare">
+        <activity
+            android:name=".Home_Pages.medicine_book"
+            android:exported="false" />
+        <activity
+            android:name=".Home_Pages.medicine_order"
+            android:exported="false" />
+        <activity
+            android:name=".App_Model.medicine_order_item"
+            android:exported="false" />
+        <activity
+            android:name=".Home_Pages.medicine_list"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" /> <!-- Doctor Start -->
+        <activity
+            android:name=".Home_Pages.Doctor_List"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home_Pages.Doctor_Book"
+            android:exported="true"
+            android:screenOrientation="portrait" /> <!-- Doctor End -->
+        <!-- Profile Start -->
+        <activity
+            android:name=".Home_Pages.Profile_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home_Pages.Doctor_Order"
+            android:exported="true"
+            android:screenOrientation="portrait" /> <!-- Profile Start -->
+        <activity
+            android:name=".Home_Pages.HealthCare_Update_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>
